@@ -1,0 +1,401 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;    
+    line-height: 2.0;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #333;
+    color: #ddd;
+    padding: 10px 0;
+}
+
+section {
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+   
+}
+
+.logo{
+    display: flex; 
+    align-items: center;
+    
+}
+.logo img{    
+    height: 200px;
+    margin-right: 20px;
+} 
+nav ul {     
+   list-style-type: none;  
+   margin: 0;        
+   padding: 0;
+   text-align: center;
+}
+ nav ul li {       
+    display: inline-block;    
+    margin-right: 0 15px;
+}
+ nav ul li a {    
+    color: #fff;
+    text-decoration: none;
+}
+ nav ul li a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.img_principal {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.img_principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto_principal {
+    position:absolute;
+    top: 100%;
+    left: 55%;
+    transform: translate(-105%, -105%);
+    background: rgba(0, 0, 0, 0);
+    padding: 1px;
+    border-radius: 10px;
+}
+
+
+.titulo {
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+
+.texto_principal p {
+    font-size: 1em;
+    margin: 10px;
+}
+
+/* Para pantallas de 768px y menos */
+@media (max-width: 768px) {
+    .texto_principal {
+        padding: 15px;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .texto_principal p {
+        font-size: 1em;
+    }
+}
+
+/* Para pantallas de 480px y menos */
+@media (max-width: 480px) {
+    .texto_principal {
+        padding: 10px;
+    }
+
+    .titulo {
+        font-size: 1.2em;
+    }
+
+    .texto_principal p {
+        font-size: 0.9em;
+    }
+}
+
+#inicio{
+    background-color: #c3c3eb;
+}
+#nosotros{
+    background-color: #f6f6fd;
+}
+  
+ .texto_secundario {
+        display: flex;
+ }       
+    @media (max-width: 768px) {
+        .texto_secundario {
+            flex-direction: column;
+            align-items: center;    
+        }
+    }  
+    .img-left {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .text-right {
+        text-align: center;
+    }
+  
+#nuestros-servicios{
+    background-color:#c3c3eb,     
+}
+.accordion {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.accordion-item {
+    border-top: 1px solid #ccc;
+}
+
+.accordion-header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #d1ccdd;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+}
+
+.accordion-header:hover {    
+    background-color: #ddd;
+}
+
+.accordion-content {
+    text-align: left;
+    padding: 0 10px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+.accordion-content ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 10px;
+}
+
+.accordion-content ul li {
+    margin: px 0;
+}
+buttom{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0,5);
+    box-shadow: 1px 1px 8px rgba(0,0,0,0,5);
+    color: white;
+    background-color: blueviolet;
+}
+buttom .hover{
+    background-color: rgb(101,33,165);
+}
+
+#nuestras-traducciones {
+    padding: 20px;
+    background-color: #f7f5f5;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nuestras-traducciones h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.carta-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carta {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;    
+    background: #1a1919;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carta h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.carta p {
+    margin-bottom: 40px;
+    font-size: 1em;
+}
+
+.carta button {
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;   
+    border-radius: 5px;    
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.carta button:hover {      
+    background: #78aee7;
+}
+@media (max-width: 768px) {
+    #nuestras-traducciones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta {
+        width: 80%;
+    }
+}
+
+/* Para pantallas de 480px y menos */
+@media (max-width: 480px) {
+    .carta {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+/* Estilos específicos para formularios */
+#contacto {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contacto h2 {
+    margin-top: 0;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contactForm button {
+    background-color: #5b4d68;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: #555;
+}
+
+/* Para pantallas de 768px y menos */
+@media (max-width: 768px) {
+    #contacto {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 14px;
+    }
+
+    #contactForm button {
+        font-size: 14px;
+    }
+}
+
+/* Para pantallas de 480px y menos */
+@media (max-width: 480px) {
+    #contacto {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #contactForm input,
+    #contactForm textarea {
+        font-size: 12px;
+    }
+
+    #contactForm button {
+        font-size: 12px;
+    }
+}
+label {
+    background-color:#e5e3f0 ;
+    display: box;    
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    background-color: #333244;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: #2b2542;
+}
+.social-media-icon i{
+    font-size: 20px;
+    line-height: 60px;
+}
